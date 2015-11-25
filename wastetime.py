@@ -22,7 +22,7 @@ HOLLYDAYS_2015 = {
 
 
 def get_issues(created_on, closed_on):
-    redmine = Redmine('http://rednm.globosat.net.br/', key='2bd89b95fd5bc291399b8f94dab485353642248e')
+    redmine = Redmine('http://rednm.globosat.net.br/', key='put the key here')
     p = redmine.project.get('bck-infra')
     issues = redmine.issue.filter(
         project_id=p.id,
